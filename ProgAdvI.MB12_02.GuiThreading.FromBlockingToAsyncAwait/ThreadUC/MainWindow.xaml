@@ -1,0 +1,48 @@
+﻿<Window x:Class="ThreadUC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Import Demo"
+        Height="350"
+        Width="520">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,12">
+            <Button x:Name="StartButton" Width="140"
+                    Height="32"
+                    Margin="0,0,12,0"
+                    Click="StartImport_Click">
+                Import starten
+            </Button>
+
+            <Button x:Name="ClearButton" Width="120"
+                    Height="32"
+                    Click="Clear_Click">
+                Leeren
+            </Button>
+        </StackPanel>
+
+        <TextBlock Grid.Row="1"
+                   FontWeight="Bold"
+                   Text="Status:" />
+
+        <TextBlock Grid.Row="1"
+                   Margin="60,0,0,0"
+                   x:Name="StatusTextBlock"
+                   Text="Bereit" />
+
+        <TextBlock Grid.Row="2"
+                   Margin="0,12,0,6"
+                   FontWeight="Bold"
+                   Text="Log:" />
+
+        <ListBox Grid.Row="3"
+                 x:Name="LogListBox" />
+    </Grid>
+</Window>
