@@ -1,6 +1,6 @@
 ﻿namespace GenericsRepetitionHandsOn {
     internal class Program {
-        private static void Mainx(string[] args) {
+        private static void Main(string[] args) {
             // UseCase: Pipeline-basierte Datenverarbeitung
 
             Console.WriteLine("=== Aufgabe 1: Object-Pipeline reparieren ===");
